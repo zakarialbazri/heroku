@@ -7,7 +7,7 @@ const App = () => {
   const [error, setError] = useState('');
 
   useEffect(() => {
-    axios.get('http://localhost:8080/hello')
+    axios.get('/api/hello')
       .then(response => {
         setMessage(response.data);
       })
